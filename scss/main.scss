@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::after,*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    // font-family: 'Big Shoulders Display', cursive;
+    // font-family: 'Lexend Deca', sans-serif;
+    h1,h2,h3,h4{
+        color: hsl(0, 0%, 95%);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    button{
+        background-color: hsl(0, 0%, 95%);
+        padding: .6rem 1.2rem;
+        border: 2px solid hsl(0, 0%, 95%);
+        border-radius: 2rem;
+        &:hover{
+            color:  hsl(0, 0%, 95%);
+            cursor: pointer;
+        }
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        margin-bottom: 5rem;
+    }
+}
+
+.container{
+    height: auto;
+    width: 75%;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    &__item1,
+    &__item2,
+    &__item3{
+        padding: 3rem;
+    }
+
+    &__item1{
+        background-color: $Bright-orange;
+        button{
+            color: $Bright-orange;
+            &:hover{
+                background-color: $Bright-orange;
+            }
+        }
+    }
+    &__item2{
+        background-color: $Dark-cyan;
+        button{
+            color: $Dark-cyan;
+            &:hover{
+                background-color: $Dark-cyan;
+            }
+        }
+    }
+    &__item3{
+        background-color: $Very-dark-cyan;
+        button{
+            color: $Very-dark-cyan;
+            &:hover{
+                background-color: $Very-dark-cyan;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        flex-flow: column;
+        overflow: auto;
+    }
+  }
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+
+
+
+
+
+
+
+
